@@ -6,6 +6,13 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 import './App.css';
+import { addTask, 
+         deleteTask, 
+         markDone,
+         cancelUpdate,
+         changeTask,
+         updateTask
+   } from './taskFunctions';
 
 function App() {
   //tasks (ToDo List) state
@@ -18,36 +25,29 @@ function App() {
   const [newTask, setNewTask] = useState('');
   const [updateData, setUpdateData] = useState('');
 
-  //Add task
-  /////////////////////////////////
-  const addTask = () => {
-    //
+  const handleAddTask = () => {
+    addTask();
   }
 
-  //Delete task
-  const deleteTask = (id) => {
-    //
+  const handleDeleteTask = () => {
+    deleteTask();
   }
 
-  //mark task as done or completed
-  const markDone = (id) => {
-    //
+  const handleMarkDone = () => {
+    markDone();
   }
 
-  //cancelUpdate
-  const cancelUpdate = () => {
-    //
+  const handleCancleUpdate = () => {
+    cancelUpdate();
   }
 
-  //change task for update
-  const changeTask = (e) => {
-    //
+  const handleChangeTask = () => {
+    changeTask();
   }
 
-  //update task
-  const updateTask = () => {
-    //
-  } 
+  const handleUpdateTask = () => {
+    updateTask();
+  }
 
   return (
     <div className="contatiner App">

@@ -17,7 +17,7 @@ import { addTask,
 function App() {
   //tasks (ToDo List) state
   const [toDo, setToDo] = useState ([
-    {"id": 1, "title": "Task 1", "status": true},
+    {"id": 1, "title": "Task 1", "status": false},
     {"id": 2, "title": "Task 2", "status": false}
   ]);
 
@@ -50,7 +50,7 @@ function App() {
   }
 
   return (
-    <div className="contatiner App">
+    <div className="container App">
       <br /><br />
       <h2>To Do List App (ReactJS)</h2>
       <br /><br />
@@ -69,7 +69,17 @@ function App() {
                 <span className='taskNumber'>{index + 1}</span>
                 <span className='taskText'>{toDoItem.title}</span>
               </div>
-
+              <div className='iconsWrap'>
+                <span>
+                  <FontAwesomeIcon icon={faCircleCheck}/>
+                </span>
+                <span>
+                <FontAwesomeIcon icon={faPen}/>
+                </span>
+                <span>
+                <FontAwesomeIcon icon={faTrashCan}/>
+                </span>
+              </div>
           </div> 
         </React.Fragment>
       )

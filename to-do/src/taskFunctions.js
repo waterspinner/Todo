@@ -1,30 +1,29 @@
 //Add task
-  /////////////////////////////////
-  export const addTask = () => {
-    //
-  }
+export const addTask = () => {
+  //
+}
 
-  //Delete task
-  export const deleteTask = (id) => {
-    //
-  }
+//Delete task
+export const deleteTask = (id) => {
+  //
+}
 
-  //mark task as done or completed
-  export const markDone = (id) => {
-    //
-  }
+//mark task as done or completed
+export const markDone = (id) => {
+  //
+}
 
-  //cancelUpdate
-  export const cancelUpdate = () => {
-    //
-  }
+//cancel Update
+export const cancelUpdate = () => {
+  //
+}
 
-  //change task for update
-  export const changeTask = (e) => {
-    //
-  }
+//change task for update
+export const changeTask = (e) => {
+  //
+}
 
-  //update task
-  export const updateTask = () => {
-    //
-  } 
+//update task
+export const updateTask = () => {
+  //
+} 
